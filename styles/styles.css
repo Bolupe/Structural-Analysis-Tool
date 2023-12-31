@@ -16,12 +16,17 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("background-image.jpg");
+    background-image: url("/assets/background-image.jpg");
     background-repeat: no-repeat;
     background-size: cover; /* Set to 'cover' to fill the entire viewport without whitespace */
     background-position: center center;
     filter: blur(px); /* Add the desired blur value */
     z-index: -1;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 
 .heading-text {
@@ -67,3 +72,4 @@ button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+

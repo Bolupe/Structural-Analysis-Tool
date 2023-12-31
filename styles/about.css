@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: linear-gradient(to right, #a09b9b, #d8e0e0); 
+    animation: gradientAnimation 5s infinite alternate; 
+}
+
+.container {
+    margin: 50px;
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+    background-color: #eee7e7;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.back-link {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+p, h3, ol, label {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.heading {
+    display: flex;
+}
+
+.general-info, .analysis-steps, .playground {
+    margin-bottom: 20px;
+}
+
+.analysis-column {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.step-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.step-column {
+    flex: 1;
+    min-width: 30%; 
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px 10px 10px 35px;
+    transition: transform 0.3s;
+}
+
+.beams{
+    margin-right: 20px;
+}
+.step-column:hover {
+    transform: scale(1.05);
+}
+
+.step-list {
+    list-style-type: decimal;
+}
+
+@media only screen and (max-width: 600px) {
+    .step-column {
+        min-width: 100%; 
+    }
+}
